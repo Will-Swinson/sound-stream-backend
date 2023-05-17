@@ -1,0 +1,459 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "PostgreSQL",
+    "databaseName": "music-app",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnAutoIncrement",
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "users",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "eb96c7bc-91a7-48ce-8b24-6385cab2821c"
+          },
+          {
+            "name": "username",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1be24b3a-7895-4344-86b0-9a0679c07b50"
+          },
+          {
+            "name": "password",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "06f038bc-8f0a-4880-b6f4-1b8f913f044e"
+          },
+          {
+            "name": "email",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "369fdede-8a6a-4579-b915-c71fe397ce88"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 82,
+          "top": 79,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "d62893ea-d9c3-4be2-ba9c-6f97fcbec05a"
+      },
+      {
+        "name": "playlists",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "828225b9-43fa-441d-96e8-650d2f9f144a"
+          },
+          {
+            "name": "title",
+            "comment": "",
+            "dataType": "text",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f5a4554f-f3a7-4033-89bf-758d617c5999"
+          },
+          {
+            "name": "created date",
+            "comment": "",
+            "dataType": "date",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.2744140625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "01841036-54d8-470a-8cca-329476e19783"
+          },
+          {
+            "name": "public or private",
+            "comment": "",
+            "dataType": "boolean",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 93.76806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b533d469-8b9f-49a8-9ac5-b037ee438f4b"
+          },
+          {
+            "name": "last modified",
+            "comment": "",
+            "dataType": "date",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.97900390625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "61c30410-bbf8-4c7b-995b-4e724fd21f48"
+          },
+          {
+            "name": "user_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1f569d0a-a1af-4a56-8c7c-f5bcd73bb2ae"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 897,
+          "top": 60,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "225be147-8bac-4f66-8d14-37dcaab9146e"
+      },
+      {
+        "name": "playlist_songs",
+        "comment": "",
+        "columns": [
+          {
+            "name": "playlist_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "46127092-1f0c-4707-a6f2-30fba4b0ca39"
+          },
+          {
+            "name": "song_id",
+            "comment": "",
+            "dataType": "serial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2677a95f-d116-46b9-a83e-27799e830b62"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 911,
+          "top": 705,
+          "zIndex": 3,
+          "widthName": 83.65625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "bd0667aa-849c-46a0-a8f9-8ac16cfe4345"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "225be147-8bac-4f66-8d14-37dcaab9146e",
+          "columnIds": [
+            "828225b9-43fa-441d-96e8-650d2f9f144a",
+            "f5a4554f-f3a7-4033-89bf-758d617c5999"
+          ],
+          "x": 992.1920166015625,
+          "y": 252,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "bd0667aa-849c-46a0-a8f9-8ac16cfe4345",
+          "columnIds": [
+            "46127092-1f0c-4707-a6f2-30fba4b0ca39",
+            "e3230340-7208-4aca-becb-6fb11b1052f2"
+          ],
+          "x": 997.75,
+          "y": 705,
+          "direction": "top"
+        },
+        "constraintName": "fk_playlists_to_playlist_songs",
+        "visible": true,
+        "id": "aa2cb224-db57-4151-8530-2dac0fc255d5"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "225be147-8bac-4f66-8d14-37dcaab9146e",
+          "columnIds": [
+            "828225b9-43fa-441d-96e8-650d2f9f144a"
+          ],
+          "x": 1182.5760498046875,
+          "y": 252,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "bd0667aa-849c-46a0-a8f9-8ac16cfe4345",
+          "columnIds": [
+            "2677a95f-d116-46b9-a83e-27799e830b62"
+          ],
+          "x": 1171.25,
+          "y": 705,
+          "direction": "top"
+        },
+        "constraintName": "fk_playlists_to_playlist_songs",
+        "visible": true,
+        "id": "b8256225-d33d-4787-8293-47a75e1e62e9"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d62893ea-d9c3-4be2-ba9c-6f97fcbec05a",
+          "columnIds": [
+            "eb96c7bc-91a7-48ce-8b24-6385cab2821c"
+          ],
+          "x": 429,
+          "y": 154.5,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "225be147-8bac-4f66-8d14-37dcaab9146e",
+          "columnIds": [
+            "1f569d0a-a1af-4a56-8c7c-f5bcd73bb2ae"
+          ],
+          "x": 897,
+          "y": 156,
+          "direction": "left"
+        },
+        "constraintName": "fk_users_to_playlists",
+        "visible": true,
+        "id": "61c941d9-3ea2-4c89-92fb-3881343e7a79"
+      }
+    ]
+  }
+}
